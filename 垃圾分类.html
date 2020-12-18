@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>垃圾分类</title>
+		<style type="text/css">
+		*{
+    	    padding:0;
+    	    margin:0;
+    	}
+    	body{
+    		width: 100%;
+    		height: 100%;
+    		background-image:url('img/bg.jpg');    	
+    	}
+    	#outside{
+			visibility: visible;
+			width: 500px;
+			height: 200px;
+			position: absolute;
+			top: 200px;
+			left: 550px;
+		}
+		.text{
+			text-align: center;
+			padding-top: 20px;
+			font-size: 30px;
+			font-family:"微软雅黑";
+			font-weight: 900;
+		}
+		.butt{
+			margin-top: 40px;
+			margin-left: 220px;
+			font-size: 20px;
+		}
+		#header{
+			width:1276px;
+			height: 545px;
+			margin: 0 auto;
+			visibility: hidden;
+		}
+		.logo{
+			float: left;
+		}
+		.search{
+			float: right;
+			height: 60px;
+			margin-top: 50px;
+		}
+		form{
+			position: relative;
+			width: 260px;
+		}
+		input,button{
+			border: none;
+			outline: none;
+		}
+		.search input{
+			width: 100%;
+			height: 42px;
+			padding-left: 10px;
+			border: 2px solid #ee781e;
+		}
+		#menu{ 
+			width: 1280px;
+			height: 60px;
+			margin: 0 auto;
+			background-color: #a4e2c6;
+			position: absolute;
+			top: 100px;
+			left: 225px;
+			visibility: hidden;
+		}
+		ul{
+			list-style-type: none;
+		}
+		.homepage{
+			width: 110px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			margin-left: 143px;
+			display:inline-block;
+            float:left;
+		}
+		.memu{
+			width: 110px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			display:inline-block;
+            float:left;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			background: #a4e2c6;
+			color: #fff;
+		}
+		#banner{
+			width: 1280px;
+			height: 542px;
+			margin: 0 auto;
+			position: absolute;
+			top: 170px;
+			left: 225px;
+			visibility: hidden;
+		}
+		#one{
+			width: 1280px;
+			height: 261px;
+			margin: 0 auto;
+			position: absolute;
+			top: 720px;
+			left: 225px;
+			border: 1px dashed blue;
+			visibility: hidden;
+		}
+		.pic1{
+			height: 121px;
+			float: left;
+			padding: 70px 85px 70px 85px;
+		}
+		.t1{
+			font-size:20px;
+            font-family:Microsoft YaHei UI;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            line-height:21px;
+            padding-top: 28px;
+		}
+		p{
+			padding: 8px;
+		}
+		#two{
+			width: 1280px;
+			height: 291px;
+			margin: 0 auto;
+			position: absolute;
+			top: 985px;
+			left: 225px;
+			border: 1px dashed green;
+			visibility: hidden;
+		}
+		.pic2{
+			height: 121px;
+			float: left;
+			padding: 85px;
+		}
+		#three{
+			width: 1280px;
+			height: 351px;
+			margin: 0 auto;
+			position: absolute;
+			top: 1280px;
+			left: 225px;
+			border: 1px dashed red;
+			visibility: hidden;
+		}
+		.pic3{
+			height: 121px;
+			float: left;
+			padding: 115px 85px 115px 85px;
+		}
+		#four{
+			width: 1280px;
+			height: 231px;
+			margin: 0 auto;
+			position: absolute;
+			top: 1634px;
+			left: 225px;
+			border: 1px dashed orange;
+			visibility: hidden;
+		}
+		.pic4{
+			height: 121px;
+			float: left;
+			padding: 55px 85px 55px 85px;
+		}
+		#footer{
+			width: 1282px;
+			height: 120px;
+			line-height: 120px;
+			background: #f0fcff;
+			color: #000;
+			text-align: center;
+			position: absolute;
+			top: 1869px;
+			left: 225px;
+			visibility: hidden;
+		}
+		.pj{
+			font-size: 17px;
+			position: absolute;
+			top: 20px;
+			right: 190px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="outside">
+			<p class="text">垃圾分类益处多，环境保护靠你我</p>
+			<input type="button" class="butt" value="开始浏览" onclick="start()">
+		</div>
+		<div id="header">
+			<div class="logo">
+				<img src="img/logo.png" alt="垃圾分类">
+			</div>
+			<input type="button" class="pj" value="点击评价">
+			<div class="search">
+				<form>
+					<input type="text" placeholder="请输入你要搜索的垃圾名称...">
+					<!-- <button type="submit"></button> -->
+				</form>
+			</div>
+		</div>
+		<div id="menu">
+			<ul class="nav">
+				<li class="homepage"><a href="#">首页</a></li>
+				<li class="memu"><a href="#">国际动态</a></li>
+				<li class="memu"><a href="#">国内动态</a></li>
+				<li class="memu"><a href="#">新闻公告</a></li>
+				<li class="memu"><a href="#">政策法规</a></li>
+				<li class="memu"><a href="#">人物访谈</a></li>
+				<li class="memu"><a href="#">名企动态</a></li>
+				<li class="memu"><a href="#">市场观点</a></li>
+				<li class="memu"><a href="#">更多</a></li>
+			</ul>
+		</div>
+		<div id="banner">
+			<div class="pic"><img id="img" src="img/banner.jpeg"></div>
+		</div>
+		<div id="one">
+			<div class="pic1"><img src="img/1.png"></div>
+			<div class="t1">
+				<h2>厨余垃圾</h2>
+				<p>厨余垃圾是指家庭中产生的菜帮菜叶、瓜果皮核、剩菜剩饭、废弃食物等易腐性垃圾。</p>
+				<p>主要包括：剩饭剩菜、瓜皮果壳、花卉绿植、过期食品、肉类碎骨、茶叶渣、中药药渣等。</p>
+				<p>投放要求：</p>
+				<p>
+					<ul type="circle">
+						<li>厨余垃圾应从产生时就与其他品类垃圾分开，投放前沥干水分。</li>
+						<li>保证厨余垃圾分出质量，做到“无玻璃陶瓷、无金属杂物、无塑料橡胶”。</li>
+						<li>有包装物的过期食品应将包装物去除后分类投放。</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div id="two">
+			<div class="pic2"><img src="img/2.png"></div>
+			<div class="t1">
+				<h2>可回收垃圾</h2>
+				<p>可回收物是指在日常生活中产生的，已经失去原有全部或部分使用价值，回收后经过再加工可以成为生产原料或者经过整理可以再利用的物品。</p>
+				<p>主要包括：废纸，废塑料，废金属，废玻璃，废包装物，废旧纺织物，废弃电器电子产品，废纸塑铝复合包装等。</p>
+				<p>投放要求：</p>
+				<p>
+					<ul type="circle">
+						<li>可回收物分类投放时，应尽量保持清洁干燥，避免污染。废纸应保持平整。</li>
+						<li>立体包装物应清空、清洁后压扁投放。</li>
+						<li>废玻璃制品应轻投轻放，有尖锐边角的应包裹后投放。</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div id="three">
+			<div class="pic3"><img src="img/3.png"></div>
+			<div class="t1">
+				<h2>有害垃圾</h2>
+				<p>有害垃圾是指生活垃圾中的有毒有害物质。</p>
+				<p>主要包括：《国家危险废物名录》（环境保护部令第39号）的品种，包括废电池（镉镍电池、氧化汞电池、铅蓄电池等），废荧光灯管（日光灯管、节能灯等），废温度计，废血压计，废药品及其包装物，废油漆、溶剂及其包装物等。</p>
+				<p>投放要求：</p>
+				<p>
+					<ul>
+						<li>有害垃圾投放应保证器物完整，避免二次污染。</li>
+						<li>镉镍电池、氧化汞电池、铅蓄电池等，投放时请注意轻投轻放。</li>
+						<li>油漆桶、杀虫剂如有残留请密闭后投放。</li>
+						<li>荧光灯、节能灯易破损请连带包装或包裹后轻放。</li>
+						<li>废药品及其包装，连带包装一并投放。</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div id="four">
+			<div class="pic4"><img src="img/4.png"></div>
+			<div class="t1">
+				<h2>其他垃圾</h2>
+				<p>其他垃圾是指除有害垃圾、可回收物、厨余垃圾之外的的垃圾。</p>
+				<p>主要包括：餐盒、餐巾纸、湿纸巾、卫生间用纸、塑料袋、食品包装袋、污染的纸、烟蒂、纸尿裤、一次性餐具、大骨头、贝壳、花盆、陶瓷等。</p>
+				<p>投放要求：</p>
+				<p>
+					<ul>
+						<li>难以辨识类别的生活垃圾投入其它垃圾容器内.</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div id="footer">
+			苏ICP备000号、2020-2023 版权所有
+		</div>
+		<script>
+			var pj = document.getElementsByClassName("pj");
+			function start(){
+				document.getElementById('outside').style.visibility='hidden';
+				document.getElementById('header').style.visibility='visible';
+				document.getElementById('menu').style.visibility='visible';
+				document.getElementById('banner').style.visibility='visible';
+				document.getElementById('one').style.visibility='visible';
+				document.getElementById('two').style.visibility='visible';
+				document.getElementById('three').style.visibility='visible';
+				document.getElementById('four').style.visibility='visible';
+				document.getElementById('footer').style.visibility='visible';
+			}
+			pj[0].onclick = function(){
+				var a=window.prompt('请输入您对本网页评价, 1(满意) 2(一般) 3(不满意)','请输入对应的数字');
+				if(a){
+					alert('感谢您的反馈！');
+				}
+			}
+			// function fun(){
+			// 	var a=window.prompt('请输入您对本网页评价, 1(满意) 2(一般) 3(不满意)','请输入对应的数字');
+			// 	if(a){
+			// 		alert('感谢您的反馈！');
+			// 	}
+			// }
+			window.onload=function(){
+				var img=document.getElementById('img');
+				img.onmouseover=function(){
+					img.src="img/banner2.jpg";
+				}
+				img.onmouseout=function(){
+					img.src="img/banner.jpeg";
+				}
+
+			}
+		</script>
+	</body>
+</html>
